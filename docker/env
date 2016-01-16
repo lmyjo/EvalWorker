@@ -1,4 +1,0 @@
-QUEUE_HOST=rabbitmq
-QUEUE_PORT=5672
-QUEUE_NAME=evaluations
-QUEUE_PROTOCOL=amqp
