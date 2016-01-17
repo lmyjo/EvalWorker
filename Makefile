@@ -1,4 +1,4 @@
-all: clean build-release
+all: build-release
 
 build-release:
 	docker build -t lmyjo/evaluation-worker -f docker/Dockerfile .

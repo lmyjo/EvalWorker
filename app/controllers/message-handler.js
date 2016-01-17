@@ -9,8 +9,7 @@ module.exports = function (channel) {
       let evaluationObject = JSON.parse(evaluationMessage);
       evaluation(evaluationObject, (err, value) => {
         if(err) console.log(err);
-        //set a state of error in the evaluation
-        console.log(value);
+        if (value) console.log(value);
         channel.ack(queueMessage);
       });
     }
