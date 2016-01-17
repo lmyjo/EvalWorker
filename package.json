@@ -23,6 +23,7 @@
   "homepage": "https://github.com/lmyjo/EvalWorker#readme",
   "dependencies": {
     "amqplib": "^0.4.0",
-    "dotenv": "^1.2.0"
+    "dotenv": "^1.2.0",
+    "lmyjo-type": "git+https://github.com/lmyjo/lmyjo-type.git"
   }
 }
