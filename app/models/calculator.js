@@ -67,15 +67,15 @@ module.exports = {
     return new Promise((resolve, reject) => {
       if(evalObject.operations) {
         let vpn = calculateVPN(evalObject.operations);
-        resolve(vpn);
+        resolve(vpn, evalObject);
       } else {
         reject({error:'The evalObject does not has operations'});
       }
     });
   },
-  getTIR: function getTIR(vpn){
+  getTIR: function getTIR(vpn, evalObject){
     return new Promise((resolve, reject) => {
-      vpn.tir = 0.04;
+      //TODO TIR at V2
       resolve(vpn);
     });
   },
